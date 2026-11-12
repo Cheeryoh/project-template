@@ -1,102 +1,19 @@
-# [Project Name]
+# Project Template
 
-> [One-line description of what this project does]
+A reusable documentation and collaboration scaffold for starting a project.
 
----
+## What is included
 
-## Overview
+- [RULES.md](RULES.md): collaboration rules to adapt for your project.
+- [WORKLOG.md](WORKLOG.md): a place to record requests, progress, and decisions.
+- [CLAUDE.md](CLAUDE.md) and `.claude/`: agent guidance and configuration to review before reuse.
+- `.gitignore` and `.gitattributes`: repository configuration.
 
-[2-3 sentences describing the project, its purpose, and its users.]
+## Customize it
 
----
+1. Set the project name and purpose in this README.
+2. Review and adapt the collaboration rules and agent configuration.
+3. Add the application's source, dependencies, and actual setup commands.
+4. Document the stack, configuration, validation, and deployment process as they are implemented.
 
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Frontend | [e.g., Next.js, React, SvelteKit] |
-| Deployment | [e.g., Vercel] |
-| Database | [e.g., Supabase (PostgreSQL)] |
-| Auth | [e.g., Supabase Auth] |
-| Storage | [e.g., Supabase Storage] |
-| [Other] | [e.g., Resend for email] |
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js >= 18
-- [Other prerequisites]
-
-### Installation
-
-```bash
-git clone <repo-url>
-cd <project-name>
-npm install
-```
-
-### Environment Variables
-
-Copy the example file and fill in your values:
-
-```bash
-cp .env.example .env
-```
-
-See `.env.example` for all required variables. **Never commit `.env`.**
-
-### Development
-
-```bash
-npm run dev
-```
-
----
-
-## Project Structure
-
-```
-[Add directory tree once structure is established]
-```
-
----
-
-## Database
-
-This project uses Supabase. Migrations are in `supabase/migrations/`.
-
-```bash
-# Apply migrations locally
-supabase db reset
-
-# Generate new migration
-supabase migration new <name>
-```
-
----
-
-## Deployment
-
-**Frontend (Vercel)**
-- Connect the repository to Vercel
-- Set environment variables in the Vercel dashboard
-- Deploys automatically on push to `main`
-
-**Database (Supabase)**
-- Managed via Supabase dashboard
-- Production migrations require explicit human approval before running
-
----
-
-## Contributing
-
-See `RULES.md` for collaboration protocol.
-
----
-
-## Worklog
-
-See `WORKLOG.md` for a full history of human requests and AI actions.
+The repository provides a process scaffold. Application code and runtime setup belong in the project created from it.
